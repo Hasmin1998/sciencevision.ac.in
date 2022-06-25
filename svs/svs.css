@@ -1,0 +1,782 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 1000rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.Main {
+  position: absolute;
+  background-image: url(https://scontent.fgau1-1.fna.fbcdn.net/v/t39.30808-6/290178994_573391561018691_7791891340943746866_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y_1KAGhcgQwAX9Zy9Ug&_nc_ht=scontent.fgau1-1.fna&oh=00_AT_p3geiueBjPmGtNFDT9KKS4EWBxaW0HJ3uGqUnRMTGtw&oe=62BC279F   );
+
+  height: 96rem;
+  width: 1000rem;
+}
+
+
+
+
+
+h1 {
+  left: 0.65rem;
+  font-family: bold;
+  position: absolute;
+  font-size: 2.53rem;
+  background-color: white;
+  padding: 1.25rem 2.725rem;
+  border: none;
+  border-radius: 7rem;
+  top: 1rem;
+
+}
+
+.Heading {
+  background-color: aqua;
+}
+
+.Mainfunctions {
+
+  background-color: #333;
+}
+
+.show-ArrowIn {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: rgb(252, 248, 248);
+  color: rgb(6, 6, 6);
+  border-radius: 10rem;
+  cursor: pointer;
+
+
+}
+
+.close-ArrowIn {
+
+  position: absolute;
+  font-size: 5rem;
+  color: rgb(253, 251, 251);
+  cursor: pointer;
+  border: none;
+  background: none;
+
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.ArrowIn {
+
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  height: 1250rem;
+  background-color: #333;
+  color: rgb(248, 246, 246);
+  top: 0.05rem;
+  z-index: 10;
+  width: 147rem;
+  padding: 0rem 0rem;
+
+}
+
+
+.overlayArI {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+
+
+}
+
+.Right {
+
+
+
+  transform: perspective(1850px) scale(0.5) translateX(25%) rotateY(-30deg);
+  transition: transform .4s;
+  transition-property: transform;
+  transition-timing-function: ease;
+  transition-delay: 10s;
+  transition-duration: 0.4s;
+
+}
+
+.Left {
+  left: 6rem;
+  top: 45rem;
+  position: absolute;
+  background-color: #333;
+
+
+  z-index: 1;
+}
+
+.ImgTran {
+  bottom: 122rem;
+}
+
+.Right {
+  position: absolute;
+  z-index: 2;
+}
+
+
+.show-Admission {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Admission {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
+}
+
+
+
+p {
+  font-size: 1.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.Admission {
+
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  height: 1250rem;
+  background-color: darkblue;
+  top: 0.05rem;
+  z-index: 10;
+  width: 145rem;
+  color: #fff;
+
+}
+
+.overlayAdm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+
+
+
+
+
+.show-Notifications {
+
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Notifications {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.Notifications {
+
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  top: 0.05rem;
+  left: 0rem;
+  height: 1250rem;
+  background-color: aquamarine;
+
+  z-index: 10;
+}
+
+
+.SecondNot {
+  bottom: 5rem;
+  font-size: 5rem;
+
+
+}
+
+.overlayNot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+
+
+
+
+
+.show-Faculty {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Faculty {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.Faculty {
+
+
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 1250rem;
+  background-color: aquamarine;
+  top: 0.05rem;
+  z-index: 10;
+}
+
+
+
+
+
+
+.overlayFac {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.show-Courses {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Courses {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.Courses {
+
+
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 1250rem;
+  background-color: bisque;
+  top: 0.05rem;
+  z-index: 10;
+}
+
+
+
+.overlayCou {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+.show-Contact {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Contact {
+  position: absolute;
+  top: 1.20rem;
+  right: 2.0rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.Contact {
+
+  position: absolute;
+  padding: 6.0rem;
+  bottom: 0rem;
+  right: 0.1rem;
+  left: 0rem;
+  height: 1250rem;
+  background-color: aquamarine;
+  top: 0.05rem;
+  z-index: 10;
+}
+
+.overlayCon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+
+
+
+
+.show-Hostel {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Hostel {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.Hostel {
+
+  position: absolute;
+  padding: 5rem;
+  bottom: 0rem;
+  top: 0.05rem;
+  right: 0rem;
+  left: 0rem;
+  width: auto;
+  height: 1250rem;
+  background-color: cornflowerblue;
+
+  z-index: 10;
+}
+
+.overlayHos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+
+
+.show-More {
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.25rem 3.25rem;
+
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-More {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.More {
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 1250rem;
+  background-color: #fff;
+  top: 0.05rem;
+  z-index: 10;
+}
+
+
+.overlayMor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+h2 {
+  font-size: large;
+
+}
+
+h3 {
+  font-size: large;
+}
+
+
+h4 {
+  font-size: large;
+}
+
+h5 {
+  font-size: large;
+}
+
+h6 {
+  font-size: large;
+}
+
+iframe {
+  right: 1rem;
+  top: 1rem;
+
+}
+
+.Main {
+  position: inherit;
+}
+
+.Events {
+  height: 70rem;
+  padding: 3rem;
+  position: absolute;
+  bottom: 4rem;
+  top: 100.0rem;
+  background-color: aqua;
+  padding: 1.25rem 2.725rem;
+
+
+
+}
+
+.ImgNeo {
+  position: absolute;
+  top: 15.0rem;
+}
+
+.Campus {
+
+  color: #fff;
+  height: 70rem;
+  left: 0.001rem;
+  width: 145rem;
+  position: absolute;
+  top: 180rem;
+  background-color: darkblue;
+  padding: 1.25rem 2.725rem;
+
+
+}
+
+.Saddam {
+  top: 22rem;
+  bottom: 2rem;
+}
+
+.FacultyMain {
+  top: 2rem;
+}
+
+.Heading {
+  background-color: b;
+}
+
+.ParentTeacherMeet {
+  top: 71rem;
+  background-color: grey;
+  color: #fff;
+  position: absolute;
+  height: 80rem;
+  width: 150rem;
+  padding: 1.25rem 2.725rem;
+
+}
+
+.Last {
+  position: absolute;
+  background-color: black;
+  height: 1120rem;
+  padding: 1.25rem 2.725rem;
+  width: 150rem;
+  top: 140rem;
+  height: 150rem;
+
+
+}
+
+
+
+.show-Office {
+
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-Office {
+  position: absolute;
+  top: 1.20rem;
+  left: 2.0rem;
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.Office {
+
+  background-color: #333;
+
+  top: 00.001rem;
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 350rem;
+  z-index: 10;
+  cursor: pointer;
+  width: 145rem;
+}
+
+
+.overlayOff {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+
+
+.show-Student {
+
+  font-size: 1.66rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10rem;
+  cursor: pointer;
+
+
+
+}
+
+.close-Student {
+  position: absolute;
+  top: 1.20rem;
+  right: 2.0rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.Student {
+  color: black;
+  position: absolute;
+  padding: 6rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  height: 1250rem;
+  top: 0.05rem;
+  z-index: 10;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+
+.overlayStu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
